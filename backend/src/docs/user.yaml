@@ -1,0 +1,85 @@
+paths:
+  /api/users/:
+    get:
+      tags:
+        - User
+      summary: Get a list of all users
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK. An array of objects containing users information
+        500:
+          description: Error Getting users data. Returns object with status, message data properties
+    post:
+      tags:
+        - User
+      summary: creates a new user
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - in: formData
+          name: name
+          description: It enables you create a new user. All fields are required.
+          required: true
+          schema:
+            $ref: "#/definitions/createUser"
+      responses:
+        201:
+          description: OK. An object with user details
+        400:
+          description: Bad request parameters. Returns an object with status, message data properties
+        500:
+          description: Error Creating new User. Returns object with status, message data properties
+  /api/users?userID={userID}:
+    put:
+      tags:
+        - User
+      summary: updates a new user's information
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: Update User
+          description: It enables you update a user's data. All fields are required.
+          required: false
+          schema:
+            $ref: "#/definitions/createUser"
+      responses:
+        201:
+          description: OK. An object with user details
+        400:
+          description: Bad request parameters. Returns an object with status, message data properties
+        500:
+          description: Error updating User data. Returns object with status, message data properties
+    delete:
+      tags:
+        - User
+      summary: deletes a user's information
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: Delete User
+          description: It enables you delete a user's data. All fields are required.
+          required: true
+          schema:
+            type: string
+            format: string
+      responses:
+        201:
+          description: OK. An object with user details
+        400:
+          description: Bad request parameters. Returns an object with status, message data properties
+        500:
+          description: Error Creating new User. Returns object with status, message data properties
+definitions: # Schema defination for request body
+  createUser:
+    type: object
+    properties:
+      name:
+        type: string
+      email:
+        type: string
+      role:
+        type: string
