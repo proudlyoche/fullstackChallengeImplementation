@@ -1,7 +1,7 @@
-## Challenge React-Redux TypeScript & Node.js Application
+## Challenge React-Redux, TypeScript & Node.js Application
 
 This project is a simple frontend react-redux and backend node.js api server application.
-Below are steps required to reproduce and run the applications.
+Below are steps required to reproduce and run the application.
 
 ---
 
@@ -18,16 +18,16 @@ Below are steps required to reproduce and run the applications.
       $ typescript --version
       4.1.2
 
-- #### Steps to run nodejs server api in development
+- #### Steps to run nodejs server api in **development**
 
-  - Download source files
+  - Clone repo : https://github.com/proudlyoche/fullstackChallengeImplementation.git
   - cd backend
   - yarn install
   - yarn run devop
 
-- #### Steps to run nodejs server api in production
+- #### Steps to run nodejs server api in **production**
 
-  - Download source files
+  - Clone repo : https://github.com/proudlyoche/fullstackChallengeImplementation.git
   - cd backend
   - yarn install
   - yarn run devop
@@ -53,7 +53,7 @@ if server successfully starts, you should see the output below in your terminal
 
 - #### Libraries - Unit Testing
 
-      The following test libraries was used for writing the test cases:
+      The following test libraries were used for writing the test cases:
         - chai
         - chai-http
         - mocha
@@ -82,7 +82,7 @@ if server successfully starts, you should see the output below in your terminal
 
 - #### Bugs Encoutered
 
-  There was no major bugs encountered
+  There were no major bugs encountered
 
 - #### OpenAPI / Swagger Documentation
 
@@ -106,16 +106,17 @@ The Swagger library was used to document api routes, requests and responses. See
 
 - #### Steps to run reactjs frontend application
 
-  Download source files
-  cd frontend
-  yarn install
-  npm yarn start
+  - Clone repo : https://github.com/proudlyoche/fullstackChallengeImplementation.git
+  - cd frontend
+  - yarn install
+  - npm yarn start
+  
 
 if application starts successfully, default browser will be lauched and a list of users will be displayed in a table
 
 - #### Architecture Pattern
 
-  Redux/Flux architecture was used along side Redux Toolkit. Redux Toolkit is the new standard of writing redux code, is help to keep redux code less complicated, it also help reduce adding too many packages.
+  Redux/Flux architecture was used along side Redux Toolkit. Redux Toolkit is the new standard of writing redux code, it helps to keep redux code less complicated, it also helps to reduce adding too many packages.
 
 - #### UI Library
 
