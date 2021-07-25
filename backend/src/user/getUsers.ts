@@ -6,7 +6,7 @@ export const getUsers = async (req: Request, res: Response) => {
     await userModel
       .find({})
       .then((users) => {
-        res.json({ message: "Users details", users });
+        res.json({ message: "Users detail", users });
       })
       .catch((error) => {
         res.boom.internal(JSON.stringify(error));
