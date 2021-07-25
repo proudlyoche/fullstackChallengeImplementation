@@ -24,7 +24,7 @@ export const updateUser = async (req: Request, res: Response) => {
         }
       )
       .then((user) => {
-        res.json({ message: "Users details updated", user });
+        res.json({ message: "User details updated", user });
       })
       .catch((error) => {
         if (error.keyPattern.email) {
