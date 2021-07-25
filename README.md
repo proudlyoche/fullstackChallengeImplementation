@@ -120,6 +120,6 @@ if application starts successfully, default browser will be lauched and a list o
 
 - #### UI Library
 
-  - ReactTrap
+  - ReactStrap
   - Toastify
   - SweetAlert
