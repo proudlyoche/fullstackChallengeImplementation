@@ -16,7 +16,7 @@ export const addUser = async (req: Request, res: Response) => {
       })
       .catch((error) => {
         if (error.keyPattern.email) {
-          res.boom.conflict("A user with this email already exit.")
+          res.boom.conflict("A user with this email already exist.")
           return
         }
         res.boom.internal(JSON.stringify(error));
